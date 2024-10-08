@@ -60,6 +60,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - lib/data/songs_data.json
+    - images/no_cover_soundtrack_image.jpg
     - images/blinded_in_chains__avenged_sevenfold.png
     - images/decadence__disturbed.jpg
     - images/feed_the_addiction__Ils.jpg

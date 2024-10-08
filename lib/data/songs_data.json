@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Nine Thou",
+    "artist": "Styles of Beyond",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F015c45f592e823c95ad900c43b58d5a8.480x360x1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Fired Up",
+    "artist": "Hush",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F6fc9b5e46d7499e90c427c3cd278fbce.640x636x1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Decadence",
+    "artist": "Disturbed",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F81118fc72afdbe6e1f6c7e09609de6d9.1000x1000x1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Hand of Blood",
+    "artist": "Bullet for My Valentine",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F66e7a7359dcd0151ecc7fa09ab9cdf33.877x877x1.png"
+  },
+  {
+    "id": 5,
+    "title": "Blinded in Chains",
+    "artist": "Avenged Sevenfold",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2F3859136cec54b00bf1f5758966713942.640x640x1.png"
+  },
+  {
+    "id": 6,
+    "title": "Feed the Addiction",
+    "artist": "Ils",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2Fa20402b02628510bdbb8e54e62e9e6c6.1000x1000x1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Feels Just Like It Should",
+    "artist": "Jamiroquai",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2Fc2e2f618ea527f5b461a0cc82bc117c0.1000x1000x1.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Tilted",
+    "artist": "Lupe Fiasco",
+    "coverPhotoUrl": "https://t2.genius.com/unsafe/202x202/https%3A%2F%2Fimages.genius.com%2Fcd4d83021b7debccabee0705b6c17c4e.499x499x1.jpg"
+  }
+]

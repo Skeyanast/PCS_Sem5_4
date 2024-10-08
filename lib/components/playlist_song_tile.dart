@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:pcs5practice4/models/song.dart';
-import 'package:pcs5practice4/pages/details_page.dart';
+import 'package:pcs5practice4/pages/song_details_page.dart';
+import 'package:pcs5practice4/constants.dart';
 
-class SongComponent extends StatelessWidget {
+class PlaylistSongTile extends StatelessWidget {
 
+  final String playlistTitle;
   final Song song;
+  final void Function(Song) onSongDeleteAction;
 
-  const SongComponent({super.key, required this.song});
+  const PlaylistSongTile({super.key, required this.playlistTitle, required this.song, required this.onSongDeleteAction});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: GestureDetector(
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsPage(song: song))),
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return SongDetailsPage(playlistTitle: playlistTitle, song: song, onSongDelete: onSongDeleteAction);
+          }));
+        },
         child: Container(
           padding: const EdgeInsets.all(10.0),
           margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.05),
@@ -26,12 +33,7 @@ class SongComponent extends StatelessWidget {
             children: <Widget>[
               ClipRRect(
                   borderRadius: BorderRadius.circular(5.0),
-                  child: Image.asset(
-                      song.coverPhoto,
-                      height: MediaQuery.of(context).size.width * 0.9,
-                      width: MediaQuery.of(context).size.width * 0.9,
-                      fit: BoxFit.cover
-                  )
+                  child: _getSongCoverImage(context, song)
               ),
               Text(
                   song.title,
@@ -54,5 +56,24 @@ class SongComponent extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Widget _getSongCoverImage(BuildContext context, Song song) {
+    if (song.coverPhotoUrl.isNotEmpty) {
+      return Image.network(
+        song.coverPhotoUrl,
+        height: MediaQuery.of(context).size.width * 0.9,
+        width: MediaQuery.of(context).size.width * 0.9,
+        fit: BoxFit.cover
+      );
+    }
+    else {
+      return Image.asset(
+        kNoCoverImage,
+        height: MediaQuery.of(context).size.width * 0.9,
+        width: MediaQuery.of(context).size.width * 0.9,
+        fit: BoxFit.cover
+      );
+    }
   }
 }

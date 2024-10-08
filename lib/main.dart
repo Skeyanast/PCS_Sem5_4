@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pcs5practice4/pages/home_page.dart';
+import 'package:pcs5practice4/pages/playlist_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Музыкальные плейлисты',
         theme: ThemeData(),
-        home: const HomePage()
+        home: const PlaylistPage(title: 'Плейлист NFS MW')
     );
   }
 }
