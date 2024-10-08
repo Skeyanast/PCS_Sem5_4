@@ -1,5 +1,9 @@
 # Муравьев Иван ЭФБО-02-22
 
+# Демонстрация работы функционала
+![Screen_recording_20241008_035720](https://github.com/user-attachments/assets/632d6547-eac4-4f78-afd1-69d5e106c84f)
+
+
 # Скриншоты работы
 ![изображение](https://github.com/user-attachments/assets/71ba50ec-e042-4c3d-be8f-55f459527285)
 ![изображение](https://github.com/user-attachments/assets/59a3030f-1ee4-4929-ad72-5ab0dea71dab)
